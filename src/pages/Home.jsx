@@ -51,8 +51,18 @@ const Home = () => {
             );
     
             const data = await resp.json();
-            let envId = data.site.environments[0].id;
-            navigate(`/tools/${envId}`)
+            // let envId = data.site.environments[0].id;
+            // console.log(envId); 
+            // フィルタリング: name プロパティが "live" のものだけを抽出
+            const liveEnvironments = data.site.environments.filter(env => env.name === 'live');
+
+            if (liveEnvironments.length > 0) {
+                // 最初の "live" 環境の id を取得
+                const envId = liveEnvironments[0].id;
+                navigate(`/tools/${envId}`);
+            } else {
+                console.error('Live environment not found.');
+            }
         }
         fetchEnvironmentId(selectedSiteId);
     }
