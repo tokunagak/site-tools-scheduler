@@ -176,7 +176,7 @@ const Tools = () => {
                                     <option value="00:00">12:00 AM</option>
                                     <option value="00:30">12:30 AM</option>
                                     <option value="01:00">1:00 AM</option>
-                                    <option value="01:00">1:30 AM</option>
+                                    <option value="01:30">1:30 AM</option>
                                     <option value="02:00">2:00 AM</option>
                                     <option value="02:30">2:30 AM</option>
                                     <option value="03:00">3:00 AM</option>
@@ -246,7 +246,7 @@ const Tools = () => {
                                     <option value="00:00">12:00 AM</option>
                                     <option value="00:30">12:30 AM</option>
                                     <option value="01:00">1:00 AM</option>
-                                    <option value="01:00">1:30 AM</option>
+                                    <option value="01:30">1:30 AM</option>
                                     <option value="02:00">2:00 AM</option>
                                     <option value="02:30">2:30 AM</option>
                                     <option value="03:00">3:00 AM</option>
